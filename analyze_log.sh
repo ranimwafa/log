@@ -3,7 +3,7 @@
 LOG_FILE="access.log"
 REPORT_FILE="log_analysis_report.txt"
 
-# إنشاء ملف التقرير
+
 echo "Log File Analysis Report" > $REPORT_FILE
 echo "Generated on: $(date)" >> $REPORT_FILE
 echo "===================================" >> $REPORT_FILE
@@ -88,7 +88,6 @@ echo "- Schedule maintenance during low-traffic hours (based on hourly request t
 echo "- Monitor days with high failures for server or application issues." >> $REPORT_FILE
 echo "- Implement rate-limiting for IPs with unusually high request counts." >> $REPORT_FILE
 
-# تحويل التقرير إلى PDF (اختياري)
 # pandoc $REPORT_FILE -o log_analysis_report.pdf
 
 echo "Analysis complete. Report saved to $REPORT_FILE"
